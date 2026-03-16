@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internacionales - Costos Extra</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="page-header">
+        <p class="breadcrumb">
+          <span>Internacionales</span>
+          <span>/</span>
+          <span>Costos</span>
+          <span>/</span>
+          <strong>Costos Extra</strong>
+        </p>
+      </header>
+
+      <main class="board">
+        <section class="card">
+          <div class="table-scroll">
+            <table class="trips-table">
+              <thead>
+                <tr>
+                  <th class="provider-header">Proveedor</th>
+                  <th>CRT</th>
+                  <th>MIC</th>
+                  <th>Fecha de viaje</th>
+                  <th>Plant</th>
+                  <th>Transportista</th>
+                  <th>Chofer</th>
+                  <th>Camion</th>
+                  <th>Semi</th>
+                </tr>
+              </thead>
+              <tbody id="trip-rows"></tbody>
+            </table>
+          </div>
+          <footer class="table-footer">
+            <span>Total de 10 items</span>
+            <div class="pager">
+              <button type="button" class="pager-button">1</button>
+              <span>10 / pagina</span>
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <template id="trip-row-template">
+      <tr class="trip-row">
+        <td class="provider-cell">
+          <button class="toggle-button" type="button" aria-label="Expandir fila">
+            <span class="toggle-icon"></span>
+          </button>
+          <span class="provider-pill"></span>
+        </td>
+        <td><span class="link-pill crt"></span></td>
+        <td><span class="muted-pill mic"></span></td>
+        <td class="travel-date"></td>
+        <td class="plant"></td>
+        <td><span class="cell-with-icon transportista"></span></td>
+        <td><span class="cell-with-icon chofer"></span></td>
+        <td><span class="cell-with-icon camion"></span></td>
+        <td><span class="cell-with-icon semi"></span></td>
+      </tr>
+      <tr class="details-row" hidden>
+        <td colspan="9">
+          <div class="details-card">
+            <h3>Costos del viaje</h3>
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>ID Costo</th>
+                  <th>Fecha</th>
+                  <th>Tipo</th>
+                  <th>Cantidad</th>
+                  <th>Monto</th>
+                  <th>Subtotal</th>
+                  <th>Pago inmediato</th>
+                  <th>Limite de pago</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody class="cost-body"></tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </template>
+
+    <template id="cost-row-template">
+      <tr>
+        <td class="cost-id"></td>
+        <td class="cost-date"></td>
+        <td class="cost-type"></td>
+        <td class="cost-qty"></td>
+        <td class="currency-cell">
+          <span class="currency-badge">USD</span>
+          <span class="cost-amount"></span>
+        </td>
+        <td class="currency-cell">
+          <span class="currency-badge">USD</span>
+          <span class="cost-subtotal"></span>
+        </td>
+        <td class="cost-instant"></td>
+        <td class="cost-limit"></td>
+        <td><span class="status-badge">Pendiente</span></td>
+        <td><button class="pay-button" type="button">Pagar</button></td>
+      </tr>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
