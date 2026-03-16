@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f5f9;
+  color: #3c4658;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 18px 18px 36px;
+}
+
+.page-header {
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #a0a8b7;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.breadcrumb strong {
+  color: #6d7686;
+}
+
+.board {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #e4e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.trips-table,
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trips-table thead th,
+.cost-table thead th {
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf1f7;
+  color: #97a0b1;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  background: #fbfcfe;
+  text-transform: none;
+}
+
+.trips-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf1f7;
+  vertical-align: middle;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.trip-row:hover td {
+  background: #fcfdff;
+}
+
+.provider-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-button {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e6ad4a;
+  border-radius: 5px;
+  background: #fff7e8;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.toggle-button.is-disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: relative;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  background: #d79019;
+  border-radius: 999px;
+}
+
+.toggle-icon::before {
+  top: 3px;
+  left: 0;
+  width: 8px;
+  height: 2px;
+}
+
+.toggle-icon::after {
+  top: 0;
+  left: 3px;
+  width: 2px;
+  height: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.toggle-button[aria-expanded="true"] .toggle-icon::after {
+  opacity: 0;
+}
+
+.provider-pill,
+.link-pill,
+.muted-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.provider-pill,
+.link-pill {
+  border: 1px solid #cae0ff;
+  color: #4b79d8;
+  background: #f5f9ff;
+}
+
+.provider-pill {
+  min-width: 168px;
+}
+
+.muted-pill {
+  border: 1px solid #e4e8f0;
+  color: #687285;
+  background: #fafbfd;
+}
+
+.travel-date,
+.plant {
+  color: #697487;
+  font-weight: 500;
+}
+
+.cell-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #556174;
+  font-weight: 500;
+}
+
+.cell-with-icon::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #ffcf72 0%, #f0a62c 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  flex: 0 0 auto;
+}
+
+.details-row td {
+  padding: 0 14px 16px;
+  background: #ffffff;
+}
+
+.details-card {
+  border: 1px solid #e8ecf3;
+  border-radius: 10px;
+  background: #fcfdff;
+  padding: 14px 14px 4px;
+}
+
+.details-card h3 {
+  margin: 0 0 12px;
+  color: #4d5668;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cost-table thead th {
+  background: #ffffff;
+}
+
+.cost-table tbody td {
+  padding: 12px 12px;
+  border-bottom: 1px solid #edf1f7;
+  font-size: 11px;
+  color: #5d6779;
+  white-space: nowrap;
+}
+
+.cost-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.currency-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.total-cell {
+  justify-content: flex-start;
+}
+
+.table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px 14px;
+  color: #9099aa;
+  font-size: 12px;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pager-button {
+  min-width: 26px;
+  height: 26px;
+  border: 1px solid #cfe0ff;
+  border-radius: 6px;
+  background: #f5f9ff;
+  color: #4979d8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.currency-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #2ea86a;
+  background: #e9fff3;
+  border: 1px solid #c8f0d9;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #fff1e7;
+  color: #e08b49;
+  border: 1px solid #ffd2b3;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.pay-button {
+  border: none;
+  border-radius: 6px;
+  background: #2d8cff;
+  color: #ffffff;
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(45, 140, 255, 0.18);
+}
+
+.pay-button:hover {
+  background: #207ce8;
+}
+
+.provider-header {
+  min-width: 230px;
+}
+
+@media (max-width: 1200px) {
+  .page-shell {
+    padding: 12px;
+  }
+
+  .trips-table thead th,
+  .trips-table tbody td,
+  .cost-table thead th,
+  .cost-table tbody td {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
