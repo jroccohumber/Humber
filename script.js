@@ -1,258 +1,147 @@
-const providers = [
-  "Logistica Andina SA",
-  "Transporte del Pacifico",
-  "Rutas del Mercosur",
-  "Flete Austral Ltda",
-  "Cargo Norte Express",
-  "Operador Rio Grande",
-  "Camino Federal SRL",
-  "Servicios Ruta Sur",
-  "Latam Trucking Group",
-  "Pampa Logistics",
-  "Andes Supply Chain",
-  "Cordillera Cargo",
-];
-
-const trips = [
+const slides = [
   {
-    crt: "008812102FSNACL",
-    mic: "25CL445410C",
-    travelDate: "05/03/2026",
-    plant: "TRADEX INTERNATIONAL SRL",
-    transportista: "ZANASSI FLAVIA ESTEFANY",
-    chofer: "SEGUNDO SANCHEZ JOSE JOEL",
-    camion: "AD00LY",
-    semi: "AD227FW",
-    costs: [
-      {
-        id: "85",
-        date: "04/03/2026",
-        type: "ATA",
-        qty: "1",
-        amount: "$ 60,00",
-        subtotal: "$ 60,00",
-        instant: "No",
-        limit: "11/03/2026",
-      },
-      {
-        id: "86",
-        date: "04/03/2026",
-        type: "Puerto",
-        qty: "1",
-        amount: "$ 57,31",
-        subtotal: "$ 57,31",
-        instant: "No",
-        limit: "11/03/2026",
-      },
+    number: "01",
+    kind: "Portada",
+    file: "slides/01-portada.svg",
+    title: "Metodología Scrum aplicada a Humber",
+    description:
+      "Carátula principal para abrir la exposición con contexto, identidad de marca y foco en el marco Scrum.",
+    points: [
+      "Introduce el objetivo de la charla.",
+      "Presenta la relación entre Scrum y Humber.",
+      "Sirve como arranque visual limpio y profesional.",
     ],
   },
   {
-    crt: "00861210MFSNACL",
-    mic: "25CL778209",
-    travelDate: "04/03/2026",
-    plant: "TRADEX INTERNATIONAL SRL",
-    transportista: "SAMASA R. L.",
-    chofer: "LUIS ORTIZ",
-    camion: "AH15EV",
-    semi: "AG369EC",
-    costs: [],
+    number: "02",
+    kind: "Vista general",
+    file: "slides/02-mapa-scrum.svg",
+    title: "Mapa de ceremonias Scrum",
+    description:
+      "Vista panorámica del ciclo para ubicar todas las ceremonias dentro de una misma narrativa.",
+    points: [
+      "Muestra cuándo ocurre cada evento.",
+      "Ayuda a conectar flujo, inspección y adaptación.",
+      "Ideal para anticipar lo que vas a explicar después.",
+    ],
   },
   {
-    crt: "07T pruiw0",
-    mic: "24ZR4675E",
-    travelDate: "04/03/2026",
-    plant: "TRADEX INTERNATIONAL SRL",
-    transportista: "MALVONI HUGO AMERICO",
-    chofer: "ARCE CARLOS ALBERTO",
-    camion: "KFB379",
-    semi: "AF229LN",
-    costs: [],
+    number: "03",
+    kind: "Marco base",
+    file: "slides/03-el-sprint.svg",
+    title: "El Sprint como contenedor",
+    description:
+      "Lámina puente para contar que el sprint contiene todos los eventos y ordena la entrega de valor.",
+    points: [
+      "Explica la duración recomendada del sprint.",
+      "Refuerza el Sprint Goal como eje del trabajo.",
+      "Muestra cómo conviven planning, daily, review y retro.",
+    ],
   },
   {
-    crt: "0010004206FBS ARG",
-    mic: "26AR0656ST",
-    travelDate: "03/03/2026",
-    plant: "QUIROMAS CHILE SPA",
-    transportista: "GUERRA SHELAR ADRIANA",
-    chofer: "NOE ALEJO AGUSTIN",
-    camion: "MAB885",
-    semi: "AB596LX",
-    costs: [],
+    number: "04",
+    kind: "Ceremonia 01",
+    file: "slides/04-sprint-planning.svg",
+    title: "Sprint Planning",
+    description:
+      "Ceremonia de inicio donde se define el objetivo del sprint, el alcance y el plan de trabajo.",
+    points: [
+      "Define por qué el sprint es valioso.",
+      "Aterriza prioridades y capacidad real.",
+      "Deja como salida el Sprint Goal y el Sprint Backlog.",
+    ],
   },
   {
-    crt: "0020095026FBS ARG",
-    mic: "26AR08123X",
-    travelDate: "03/03/2026",
-    plant: "ADECOAGRO CHILE SPA",
-    transportista: "MALVONI HUGO AMERICO",
-    chofer: "OROZCO MIGUEL ANGEL",
-    camion: "KYB379",
-    semi: "AF223JL",
-    costs: [],
+    number: "05",
+    kind: "Ceremonia 02",
+    file: "slides/05-daily-scrum.svg",
+    title: "Daily Scrum",
+    description:
+      "Instancia diaria de sincronización para inspeccionar el progreso y ajustar el plan del equipo.",
+    points: [
+      "Debe ser breve, concreta y diaria.",
+      "Detecta impedimentos tempranamente.",
+      "No es un reporte al jefe, sino coordinación del equipo.",
+    ],
   },
   {
-    crt: "0020059206FBSARG",
-    mic: "26AR091010",
-    travelDate: "03/03/2026",
-    plant: "ADECOAGRO CHILE SPA",
-    transportista: "MALVONI HUGO AMERICO",
-    chofer: "NORIEGA PABLO SEBASTIAN",
-    camion: "GHF308",
-    semi: "MPU838",
-    costs: [],
+    number: "06",
+    kind: "Práctica recomendada",
+    file: "slides/06-backlog-refinement.svg",
+    title: "Backlog Refinement",
+    description:
+      "Práctica continua que mejora la calidad de las historias antes de comprometerlas en planning.",
+    points: [
+      "Aclara alcance, criterios y dependencias.",
+      "Reduce incertidumbre antes del sprint.",
+      "Ayuda a llegar más preparados a la planificación.",
+    ],
   },
   {
-    crt: "0020017105FBSARG",
-    mic: "26AR24475P",
-    travelDate: "03/03/2026",
-    plant: "TRADEX INTERNATIONAL SRL",
-    transportista: "MALVONI HUGO AMERICO",
-    chofer: "BASTIAN MARIO ALEJANDRO",
-    camion: "FGT167",
-    semi: "AG884JK",
-    costs: [],
+    number: "07",
+    kind: "Ceremonia 03",
+    file: "slides/07-sprint-review.svg",
+    title: "Sprint Review",
+    description:
+      "Espacio para demostrar el incremento y recoger feedback real del negocio y stakeholders.",
+    points: [
+      "Se revisa trabajo terminado y usable.",
+      "La conversación gira en torno al producto.",
+      "El backlog puede adaptarse con lo aprendido.",
+    ],
   },
   {
-    crt: "0020071205FBSARG",
-    mic: "26AR24751L",
-    travelDate: "02/03/2026",
-    plant: "TRADEX INTERNATIONAL SRL",
-    transportista: "MALVONI HUGO AMERICO",
-    chofer: "ARCE CARLOS ALBERTO",
-    camion: "KTM780",
-    semi: "KJI971",
-    costs: [],
-  },
-  {
-    crt: "0010095302FBSARG",
-    mic: "25AR451825Y",
-    travelDate: "28/02/2026",
-    plant: "QUIROMAS CHILE SPA",
-    transportista: "ABRUT MARCELO EDGARDO",
-    chofer: "BASTIAN MARIO ALEJANDRO",
-    camion: "JAC204",
-    semi: "AH113FBO",
-    costs: [],
-  },
-  {
-    crt: "00100643205FBSARG",
-    mic: "25AR451819Y",
-    travelDate: "28/02/2026",
-    plant: "QUIROMAS CHILE SPA",
-    transportista: "MOLINA DAVID MANUEL",
-    chofer: "LOPEZ LEONEL",
-    camion: "AGB4LK",
-    semi: "FGT167",
-    costs: [],
+    number: "08",
+    kind: "Ceremonia 04",
+    file: "slides/08-sprint-retrospective.svg",
+    title: "Sprint Retrospective",
+    description:
+      "Momento de reflexión del equipo sobre cómo trabajó y qué mejoras llevará al próximo sprint.",
+    points: [
+      "Busca aprendizaje, no culpables.",
+      "Conviene cerrar con acciones concretas.",
+      "Conecta la mejora continua con la siguiente planning.",
+    ],
   },
 ];
 
-function shuffle(list) {
-  const clone = [...list];
-
-  for (let index = clone.length - 1; index > 0; index -= 1) {
-    const randomIndex = Math.floor(Math.random() * (index + 1));
-    [clone[index], clone[randomIndex]] = [clone[randomIndex], clone[index]];
-  }
-
-  return clone;
+function createPoints(points) {
+  return points.map((point) => `<li>${point}</li>`).join("");
 }
 
-function renderCosts(costs, container) {
-  const costTemplate = document.getElementById("cost-row-template");
-  const total = costs.reduce((sum, cost) => {
-    const normalizedValue = Number(
-      cost.subtotal
-        .replace("$", "")
-        .replace(/\./g, "")
-        .replace(",", ".")
-        .trim()
-    );
+function createSlideCard(slide) {
+  const article = document.createElement("article");
+  article.className = "slide-card";
 
-    return sum + normalizedValue;
-  }, 0);
+  article.innerHTML = `
+    <a class="slide-preview" href="./${slide.file}" target="_blank" rel="noreferrer">
+      <img src="./${slide.file}" alt="${slide.title}" loading="lazy" />
+    </a>
+    <div class="slide-content">
+      <div class="slide-meta">
+        <span class="slide-number">Slide ${slide.number}</span>
+        <span class="slide-kind">${slide.kind}</span>
+      </div>
+      <h3 class="slide-title">${slide.title}</h3>
+      <p class="slide-description">${slide.description}</p>
+      <ul class="slide-points">
+        ${createPoints(slide.points)}
+      </ul>
+      <div class="slide-actions">
+        <a class="button is-primary" href="./${slide.file}" target="_blank" rel="noreferrer">Abrir SVG</a>
+      </div>
+    </div>
+  `;
 
-  costs.forEach((cost) => {
-    const fragment = costTemplate.content.cloneNode(true);
-    fragment.querySelector(".cost-id").textContent = cost.id;
-    fragment.querySelector(".cost-date").textContent = cost.date;
-    fragment.querySelector(".cost-type").textContent = cost.type;
-    fragment.querySelector(".cost-qty").textContent = cost.qty;
-    fragment.querySelector(".cost-amount").textContent = cost.amount;
-    fragment.querySelector(".cost-subtotal").textContent = cost.subtotal;
-    fragment.querySelector(".cost-instant").textContent = cost.instant;
-    fragment.querySelector(".cost-limit").textContent = cost.limit;
-    container.appendChild(fragment);
-  });
-
-  if (costs.length > 0) {
-    const totalRow = document.createElement("tr");
-    const formattedTotal = total.toLocaleString("es-AR", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    });
-    totalRow.innerHTML = `
-      <td colspan="5"></td>
-      <td class="currency-cell total-cell">
-        <span class="currency-badge">USD</span>
-        <strong>$ ${formattedTotal}</strong>
-      </td>
-      <td colspan="4"></td>
-    `;
-    container.appendChild(totalRow);
-  }
+  return article;
 }
 
-function renderTrips() {
-  const tripTemplate = document.getElementById("trip-row-template");
-  const tripRows = document.getElementById("trip-rows");
-  const randomizedProviders = shuffle(providers);
+function renderSlides() {
+  const grid = document.getElementById("slides-grid");
 
-  trips.forEach((trip, index) => {
-    const providerName = randomizedProviders[index % randomizedProviders.length];
-    const fragment = tripTemplate.content.cloneNode(true);
-
-    const tripRow = fragment.querySelector(".trip-row");
-    const detailsRow = fragment.querySelector(".details-row");
-    const toggleButton = fragment.querySelector(".toggle-button");
-    const providerPill = fragment.querySelector(".provider-pill");
-
-    providerPill.textContent = providerName;
-    fragment.querySelector(".crt").textContent = trip.crt;
-    fragment.querySelector(".mic").textContent = trip.mic;
-    fragment.querySelector(".travel-date").textContent = trip.travelDate;
-    fragment.querySelector(".plant").textContent = trip.plant;
-    fragment.querySelector(".transportista").textContent = trip.transportista;
-    fragment.querySelector(".chofer").textContent = trip.chofer;
-    fragment.querySelector(".camion").textContent = trip.camion;
-    fragment.querySelector(".semi").textContent = trip.semi;
-
-    if (trip.costs.length > 0) {
-      const costBody = fragment.querySelector(".cost-body");
-      renderCosts(trip.costs, costBody);
-    } else {
-      detailsRow.remove();
-      toggleButton.disabled = true;
-      toggleButton.classList.add("is-disabled");
-    }
-
-    const shouldExpand = index === 0 && trip.costs.length > 0;
-    toggleButton.setAttribute("aria-expanded", String(shouldExpand));
-
-    if (trip.costs.length > 0) {
-      detailsRow.hidden = !shouldExpand;
-
-      toggleButton.addEventListener("click", () => {
-        const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
-        toggleButton.setAttribute("aria-expanded", String(!isExpanded));
-        detailsRow.hidden = isExpanded;
-        tripRow.classList.toggle("is-open", !isExpanded);
-      });
-    }
-
-    tripRow.classList.toggle("is-open", shouldExpand);
-    tripRows.appendChild(fragment);
+  slides.forEach((slide) => {
+    grid.appendChild(createSlideCard(slide));
   });
 }
 
-renderTrips();
+renderSlides();
