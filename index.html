@@ -3,115 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internacionales - Costos Extra</title>
+    <title>Metodología Scrum aplicada a Humber</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="page-header">
-        <p class="breadcrumb">
-          <span>Internacionales</span>
-          <span>/</span>
-          <span>Costos</span>
-          <span>/</span>
-          <strong>Costos Extra</strong>
-        </p>
+      <header class="hero">
+        <section class="hero-card">
+          <div class="brand">
+            <img src="./assets/logo-humber.svg" alt="Logo Humber" />
+          </div>
+          <p class="eyebrow">PRESENTACIÓN VISUAL</p>
+          <h1>Metodología Scrum aplicada a Humber</h1>
+          <p class="hero-copy">
+            Serie de imágenes minimalistas para explicar las ceremonias de Scrum
+            con una narrativa clara, estética alineada a la marca Humber y
+            contenido breve pensado para acompañar tu exposición oral.
+          </p>
+          <div class="chip-row">
+            <span class="chip is-highlight">Logo en todas las piezas</span>
+            <span class="chip">Paleta Humber</span>
+            <span class="chip">Formato SVG editable</span>
+          </div>
+          <div class="hero-actions">
+            <a
+              class="button is-primary"
+              href="./slides/01-portada.svg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Abrir portada
+            </a>
+            <a
+              class="button is-accent"
+              href="./slides/02-mapa-scrum.svg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ver mapa Scrum
+            </a>
+          </div>
+        </section>
+
+        <aside class="summary-card">
+          <p class="eyebrow">IDENTIDAD VISUAL</p>
+          <h2>Recursos preparados para tu charla</h2>
+          <p>
+            El paquete incluye una carátula, una vista general del marco Scrum y
+            una lámina por cada ceremonia clave, además de refinement como
+            práctica recomendada.
+          </p>
+          <div class="palette">
+            <span class="swatch swatch-orange" title="Naranja Humber"></span>
+            <span class="swatch swatch-dark" title="Negro Humber"></span>
+            <span class="swatch swatch-cream" title="Crema"></span>
+            <span class="swatch swatch-soft" title="Naranja suave"></span>
+          </div>
+          <div class="summary-list">
+            <div class="summary-item">
+              <strong>Slides finales</strong>
+              <span>8 piezas listas para abrir, insertar o editar.</span>
+            </div>
+            <div class="summary-item">
+              <strong>Estilo</strong>
+              <span>Minimalista, corporativo, visual y legible en proyección.</span>
+            </div>
+            <div class="summary-item">
+              <strong>Uso sugerido</strong>
+              <span>Como guía visual mientras desarrollás cada concepto.</span>
+            </div>
+          </div>
+        </aside>
       </header>
 
-      <main class="board">
-        <section class="card">
-          <div class="table-scroll">
-            <table class="trips-table">
-              <thead>
-                <tr>
-                  <th class="provider-header">Proveedor</th>
-                  <th>CRT</th>
-                  <th>MIC</th>
-                  <th>Fecha de viaje</th>
-                  <th>Plant</th>
-                  <th>Transportista</th>
-                  <th>Chofer</th>
-                  <th>Camion</th>
-                  <th>Semi</th>
-                </tr>
-              </thead>
-              <tbody id="trip-rows"></tbody>
-            </table>
+      <main>
+        <section class="guide-card">
+          <p class="eyebrow">ORDEN SUGERIDO</p>
+          <h2>Cómo contar Scrum de forma clara</h2>
+          <div class="guide-grid">
+            <article class="guide-step">
+              <span>1</span>
+              <h3>Abrí con contexto</h3>
+              <p>
+                Usá la portada para enmarcar la charla y presentar por qué Scrum
+                ayuda a ordenar la entrega de valor.
+              </p>
+            </article>
+            <article class="guide-step">
+              <span>2</span>
+              <h3>Mostrá el ciclo</h3>
+              <p>
+                Explicá primero el mapa y luego el sprint como contenedor antes
+                de profundizar en cada ceremonia.
+              </p>
+            </article>
+            <article class="guide-step">
+              <span>3</span>
+              <h3>Entrá en cada evento</h3>
+              <p>
+                Avanzá por Planning, Daily, Refinement, Review y
+                Retrospective con foco en objetivo, dinámica y resultado.
+              </p>
+            </article>
           </div>
-          <footer class="table-footer">
-            <span>Total de 10 items</span>
-            <div class="pager">
-              <button type="button" class="pager-button">1</button>
-              <span>10 / pagina</span>
-            </div>
-          </footer>
+        </section>
+
+        <section class="section-heading">
+          <p class="eyebrow">GALERÍA DE SLIDES</p>
+          <h2>Secuencia visual completa</h2>
+          <p>
+            Cada tarjeta incluye vista previa, propósito de la lámina y acceso
+            directo al archivo SVG correspondiente.
+          </p>
+        </section>
+
+        <section class="slides-grid" id="slides-grid"></section>
+
+        <section class="footer-note">
+          Los archivos SVG pueden abrirse en navegador, usarse directamente en
+          PowerPoint o Google Slides, o convertirse a PNG desde otra herramienta
+          si necesitás una versión rasterizada.
         </section>
       </main>
     </div>
-
-    <template id="trip-row-template">
-      <tr class="trip-row">
-        <td class="provider-cell">
-          <button class="toggle-button" type="button" aria-label="Expandir fila">
-            <span class="toggle-icon"></span>
-          </button>
-          <span class="provider-pill"></span>
-        </td>
-        <td><span class="link-pill crt"></span></td>
-        <td><span class="muted-pill mic"></span></td>
-        <td class="travel-date"></td>
-        <td class="plant"></td>
-        <td><span class="cell-with-icon transportista"></span></td>
-        <td><span class="cell-with-icon chofer"></span></td>
-        <td><span class="cell-with-icon camion"></span></td>
-        <td><span class="cell-with-icon semi"></span></td>
-      </tr>
-      <tr class="details-row" hidden>
-        <td colspan="9">
-          <div class="details-card">
-            <h3>Costos del viaje</h3>
-            <table class="cost-table">
-              <thead>
-                <tr>
-                  <th>ID Costo</th>
-                  <th>Fecha</th>
-                  <th>Tipo</th>
-                  <th>Cantidad</th>
-                  <th>Monto</th>
-                  <th>Subtotal</th>
-                  <th>Pago inmediato</th>
-                  <th>Limite de pago</th>
-                  <th>Estado</th>
-                  <th>Acciones</th>
-                </tr>
-              </thead>
-              <tbody class="cost-body"></tbody>
-            </table>
-          </div>
-        </td>
-      </tr>
-    </template>
-
-    <template id="cost-row-template">
-      <tr>
-        <td class="cost-id"></td>
-        <td class="cost-date"></td>
-        <td class="cost-type"></td>
-        <td class="cost-qty"></td>
-        <td class="currency-cell">
-          <span class="currency-badge">USD</span>
-          <span class="cost-amount"></span>
-        </td>
-        <td class="currency-cell">
-          <span class="currency-badge">USD</span>
-          <span class="cost-subtotal"></span>
-        </td>
-        <td class="cost-instant"></td>
-        <td class="cost-limit"></td>
-        <td><span class="status-badge">Pendiente</span></td>
-        <td><button class="pay-button" type="button">Pagar</button></td>
-      </tr>
-    </template>
 
     <script src="./script.js"></script>
   </body>

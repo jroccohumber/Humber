@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+      
+    <defs>
+      <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF2D8" />
+        <stop offset="100%" stop-color="#FFFFFF" />
+      </linearGradient>
+      <linearGradient id="dark-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#231F20" />
+        <stop offset="100%" stop-color="#3A3336" />
+      </linearGradient>
+      <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#120F10" flood-opacity="0.08" />
+      </filter>
+    </defs>
+    
+      
+    <rect width="1600" height="900" fill="#FCF8F1" />
+    <circle cx="1380" cy="110" r="190" fill="#F5A623" opacity="0.10" />
+    <circle cx="1420" cy="760" r="250" fill="#231F20" opacity="0.06" />
+    <rect x="0" y="0" width="1600" height="900" fill="url(#hero-gradient)" opacity="0.35" />
+    <path d="M1050 0h550v180c-120 35-238 27-352-26-95-43-161-87-198-154z" fill="#FFFFFF" opacity="0.50" />
+    <path d="M0 755c131 38 252 53 365 42 125-11 243-52 352-121 123-78 230-112 325-104 131 12 240 81 558 328H0z" fill="#FFFFFF" opacity="0.82" />
+    <line x1="100" y1="146" x2="1490" y2="146" stroke="#EADFCF" stroke-width="2" />
+    <text x="1500" y="92" font-size="28" font-weight="700" fill="#7E767B" text-anchor="end" font-family="Arial, Helvetica, sans-serif"><tspan x="1500" dy="0">02</tspan></text>
+    <text x="1500" y="124" font-size="14" font-weight="700" fill="#E19112" text-anchor="end" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.4"><tspan x="1500" dy="0">Humber x Scrum</tspan></text>
+    
+    <g transform="translate(88 54) scale(0.9)">
+      <circle cx="28" cy="28" r="28" fill="#231F20" />
+      <circle cx="28" cy="28" r="18" fill="#F5A623" opacity="0.18" />
+      <rect x="18" y="14" width="6" height="28" rx="3" fill="#F5A623" />
+      <rect x="32" y="14" width="6" height="28" rx="3" fill="#F5A623" />
+      <rect x="24" y="24" width="8" height="6" rx="3" fill="#F5A623" />
+      <text x="70" y="36" font-size="34" font-weight="800" fill="#F5A623" font-family="Arial, Helvetica, sans-serif">HUMBER</text>
+    </g>
+    
+    
+      <text x="92" y="182" font-size="15" font-weight="800" fill="#E19112" text-anchor="start" font-family="Arial, Helvetica, sans-serif" letter-spacing="2.0"><tspan x="92" dy="0">VISIÓN DE CONJUNTO</tspan></text>
+      <text x="92" y="230" font-size="58" font-weight="800" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="92" dy="0">Mapa de ceremonias Scrum</tspan></text>
+      <text x="92" y="330" font-size="28" font-weight="500" fill="#7E767B" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="92" dy="0">Vista general del flujo para explicar cuándo ocurre cada evento</tspan><tspan x="92" dy="36">y qué aporta dentro del sprint.</tspan></text>
+      
+      <g filter="url(#card-shadow)">
+        <rect x="92" y="250" width="1416" height="150" rx="34" fill="#FFFFFF" />
+        <rect x="140" y="312" width="1240" height="14" rx="7" fill="#FFF2D8" />
+        <rect x="140" y="312" width="1240" height="14" rx="7" fill="#F5A623" opacity="0.28" />
+        <g transform="translate(152 282)">
+          <rect width="126" height="72" rx="24" fill="#231F20" />
+          <text x="63" y="28" font-size="18" font-weight="700" fill="#F5A623" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Inicio</tspan></text>
+          <text x="63" y="52" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Planning</tspan></text>
+        </g>
+        <g transform="translate(300 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">1</tspan></text></g><g transform="translate(386 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">2</tspan></text></g><g transform="translate(472 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">3</tspan></text></g><g transform="translate(558 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">4</tspan></text></g><g transform="translate(644 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">5</tspan></text></g><g transform="translate(730 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">6</tspan></text></g><g transform="translate(816 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">7</tspan></text></g><g transform="translate(902 350)"><circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#F5A623" stroke-width="3" /><text x="0" y="8" font-size="16" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="0" dy="0">8</tspan></text></g>
+        <g transform="translate(1078 282)">
+          <rect width="126" height="72" rx="24" fill="#231F20" />
+          <text x="63" y="28" font-size="18" font-weight="700" fill="#F5A623" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Cierre</tspan></text>
+          <text x="63" y="52" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Review</tspan></text>
+        </g>
+        <g transform="translate(1230 282)">
+          <rect width="126" height="72" rx="24" fill="#F5A623" />
+          <text x="63" y="28" font-size="18" font-weight="700" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Mejora</tspan></text>
+          <text x="63" y="52" font-size="22" font-weight="800" fill="#231F20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"><tspan x="63" dy="0">Retro</tspan></text>
+        </g>
+        <text x="145" y="382" font-size="20" font-weight="700" fill="#E19112" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="145" dy="0">Refinement continuo durante todo el sprint</tspan></text>
+      </g>
+      <g transform="translate(92 460)" filter="url(#card-shadow)"><rect width="270" height="250" rx="28" fill="#FFFFFF" /><rect x="0" y="0" width="270" height="8" rx="8" fill="#F5A623" /><text x="34" y="50" font-size="28" font-weight="700" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="34" dy="0">Sprint Planning</tspan></text><line x1="34" y1="72" x2="236" y2="72" stroke="#EADFCF" stroke-width="1.5" /><circle cx="42" cy="104" r="5" fill="#F5A623" /><text x="58" y="112" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Define meta, alcance y plan inicial.</tspan></text><circle cx="42" cy="152" r="5" fill="#F5A623" /><text x="58" y="160" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Ordena prioridades y capacidad real.</tspan></text><circle cx="42" cy="200" r="5" fill="#F5A623" /><text x="58" y="208" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Resultado: Sprint Goal + backlog.</tspan></text></g><g transform="translate(384 460)" filter="url(#card-shadow)"><rect width="270" height="250" rx="28" fill="#FFFFFF" /><rect x="0" y="0" width="270" height="8" rx="8" fill="#F5A623" /><text x="34" y="50" font-size="28" font-weight="700" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="34" dy="0">Daily Scrum</tspan></text><line x1="34" y1="72" x2="236" y2="72" stroke="#EADFCF" stroke-width="1.5" /><circle cx="42" cy="104" r="5" fill="#F5A623" /><text x="58" y="112" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Sincroniza al equipo en 15 minutos.</tspan></text><circle cx="42" cy="152" r="5" fill="#F5A623" /><text x="58" y="160" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Inspecciona avances e impedimentos.</tspan></text><circle cx="42" cy="200" r="5" fill="#F5A623" /><text x="58" y="208" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Ajusta el plan diario.</tspan></text></g><g transform="translate(676 460)" filter="url(#card-shadow)"><rect width="270" height="250" rx="28" fill="#FFFFFF" /><rect x="0" y="0" width="270" height="8" rx="8" fill="#F5A623" /><text x="34" y="50" font-size="28" font-weight="700" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="34" dy="0">Sprint Review</tspan></text><line x1="34" y1="72" x2="236" y2="72" stroke="#EADFCF" stroke-width="1.5" /><circle cx="42" cy="104" r="5" fill="#F5A623" /><text x="58" y="112" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Se demuestra el incremento logrado.</tspan></text><circle cx="42" cy="152" r="5" fill="#F5A623" /><text x="58" y="160" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Se recoge feedback del negocio.</tspan></text><circle cx="42" cy="200" r="5" fill="#F5A623" /><text x="58" y="208" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Se adapta el Product Backlog.</tspan></text></g><g transform="translate(968 460)" filter="url(#card-shadow)"><rect width="270" height="250" rx="28" fill="#FFFFFF" /><rect x="0" y="0" width="270" height="8" rx="8" fill="#F5A623" /><text x="34" y="50" font-size="28" font-weight="700" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="34" dy="0">Retrospective</tspan></text><line x1="34" y1="72" x2="236" y2="72" stroke="#EADFCF" stroke-width="1.5" /><circle cx="42" cy="104" r="5" fill="#F5A623" /><text x="58" y="112" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Revisa cómo trabajó el equipo.</tspan></text><circle cx="42" cy="152" r="5" fill="#F5A623" /><text x="58" y="160" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Detecta causas y aprendizajes.</tspan></text><circle cx="42" cy="200" r="5" fill="#F5A623" /><text x="58" y="208" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Define mejoras accionables.</tspan></text></g><g transform="translate(1260 460)" filter="url(#card-shadow)"><rect width="248" height="250" rx="28" fill="#FFFFFF" /><rect x="0" y="0" width="248" height="8" rx="8" fill="#F5A623" /><text x="34" y="50" font-size="28" font-weight="700" fill="#231F20" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="34" dy="0">Refinement</tspan></text><line x1="34" y1="72" x2="214" y2="72" stroke="#EADFCF" stroke-width="1.5" /><circle cx="42" cy="104" r="5" fill="#F5A623" /><text x="58" y="112" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Acompaña todo el sprint.</tspan></text><circle cx="42" cy="152" r="5" fill="#F5A623" /><text x="58" y="160" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Aclara historias, riesgos y criterios.</tspan></text><circle cx="42" cy="200" r="5" fill="#F5A623" /><text x="58" y="208" font-size="22" font-weight="500" fill="#4D474A" text-anchor="start" font-family="Arial, Helvetica, sans-serif"><tspan x="58" dy="0">Llega mejor preparado a planning.</tspan></text></g>
+    
+    </svg>
